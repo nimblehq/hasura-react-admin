@@ -5,6 +5,7 @@ import buildHasuraProvider from 'ra-data-hasura';
 
 import 'dummy.scss';
 import 'assets/stylesheets/application.scss';
+import { OrderList } from 'components/orders/list';
 import { UserList } from 'components/users/list';
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
   return (
     <Admin dataProvider={dataProvider}>
       <Resource name="users" list={UserList} />
+      <Resource name="orders" list={OrderList} />
     </Admin>
   );
 };
