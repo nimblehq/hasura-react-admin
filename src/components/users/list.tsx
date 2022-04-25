@@ -1,5 +1,7 @@
 import React from 'react';
-import { List, Datagrid, TextField } from 'react-admin';
+import { List, Datagrid, TextField, FunctionField } from 'react-admin';
+
+import Users from 'types/datasource/users';
 
 export const UserList = () => (
   <List>
@@ -10,6 +12,16 @@ export const UserList = () => (
       <TextField source="email" />
       <TextField source="phone_number" />
       <TextField source="line_id" />
+      <FunctionField
+        source="type"
+        label="Type"
+        render={(user: Users) => {
+          if (user.type === 'buyer') {
+            return '🤑 Vendor';
+          }
+          return '💳 Buyer';
+        }}
+      />
     </Datagrid>
   </List>
 );
