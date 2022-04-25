@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const buildDataProvider = async () => {
       const dp = await buildHasuraProvider({
-        clientOptions: { uri: 'http://nimble-hasura.herokuapp.com/v1/graphql' },
+        clientOptions: { uri: 'https://nimble-hasura.herokuapp.com/v1/graphql' },
       });
       setDataProvider(() => dp);
     };
