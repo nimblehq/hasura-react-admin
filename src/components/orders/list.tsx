@@ -6,7 +6,7 @@ export const OrderList = () => (
     <Datagrid>
       <TextField source="id" />
       <TextField resource="user" source="buyer_id" />
-      <DateField source="vendor_id" />
+      <TextField source="vendor_id" />
       <TextField source="message" />
       <TextField source="status" />
       <TextField source="shop_id" />

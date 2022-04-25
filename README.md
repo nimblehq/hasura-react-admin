@@ -1,6 +1,8 @@
-# React App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b254f7b3-31ba-4fcf-a21c-e23051858e48/deploy-status)](https://app.netlify.com/sites/hasura-react-admin/deploys)
 
-This project was bootstrapped with [Nimble React template](https://github.com/nimblehq/react-templates).
+# Hasura React-Admin Test App
+
+This project was bootstrapped with [Nimble React template](https://github.com/nimblehq/react-templates). It aims to provide a POC candidate in assessing solutions for a TypeScript admin toolkit that we can reuse at Nimble.
 
 ## Available Scripts
 
@@ -59,22 +61,6 @@ To change the default fallback language
 
 ### GitHub Actions for Netlify
 
-The `.github/workflows` folder already includes GitHub Actions to deploy previews and releases of your app in Netlify.
-
-How to use it?
-
-1. Create a new empty application in Netlify (use Drag&Drop and drop their demo project)
-2. Configure the following action secrets in the Github repository:
-  - `NETLIFY_SITE_ID` available in the `Site settings` tab.
-  - `NETLIFY_AUTH_TOKEN`: created under `User settings, Applications, Personal access tokens`
-3. Push your code to the repository.
-
 Any push under `main` or `master` triggers a release in production.
 Any push under another branch triggers a preview deployment.
 Once a preview is deployed, the Preview URL is displayed in the Pull Request thread.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
